@@ -1,26 +1,24 @@
 <template>
   <header>
-    <header-top class="header__top" />
-    <img src="/logo__aurora-box.png" />
-    <div><input placeholder="Co chcesz kupić?" /></div>
-    <div>
-      <span><img src="/icon__basket.png" />Twój koszyk</span>
+    <div class="container">
+      <header-top />
     </div>
-    <header-nav />
+    <hr class="header__top-line" />
+    <div class="container">
+      <header-body />
+      <header-nav />
+    </div>
   </header>
 </template>
 <script>
 import HeaderNav from "./HeaderNav";
+import HeaderBody from "./HeaderBody";
 import HeaderTop from "./HeaderTop";
 export default {
   components: {
     HeaderNav,
+    HeaderBody,
     HeaderTop,
   },
 };
 </script>
-<style scoped>
-.header__top {
-  border-bottom: 1px gray solid;
-}
-</style>
